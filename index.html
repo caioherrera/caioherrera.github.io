@@ -4,4 +4,8 @@ layout: default
 
 <div>
   <h1>Posts</h1>
+  
+  {% for post in site.posts %}
+    <p>{{ post.title }}</p>
+  
 </div>
