@@ -8,8 +8,9 @@ layout: default
   <ul class="postList">
     {% for post in site.posts %}
       <li>
-        <h4><a class="postTitle" href="{{ post.url }}">{{ post.title }}</a></h4>
-        <p class="postDate">{{ post.date }}</p>
+        <h3><a class="postTitle" href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="postDate"><i>{{ post.date }}</i></span>
+        <span class="postDescription">{{ post.description }}</span>
       </li>
     {% endfor %}
   </ul>
