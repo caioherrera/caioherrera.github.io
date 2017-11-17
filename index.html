@@ -2,11 +2,16 @@
 layout: default
 ---
 
-<div>
+<div class="general">
   <h1>Posts</h1>
   
-  {% for post in site.posts %}
-    <p>{{ post.title }}</p>
-  {% endfor %}
+  <ul class="postList">
+    {% for post in site.posts %}
+      <li>
+        <h4><a class="postTitle" href="{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="postDate">{{ post.date }}</p>
+      </li>
+    {% endfor %}
+  </ul>
   
 </div>
